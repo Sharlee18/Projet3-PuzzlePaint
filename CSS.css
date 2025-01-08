@@ -213,7 +213,7 @@ footer p {
 /* Conteneur du carrousel */
 .carousel {
     width: 100%; /* Adaptez à la largeur souhaitée */
-    max-width: 800px; /* Largeur maximale pour limiter la taille */
+    max-width: 500px; /* Largeur maximale pour limiter la taille */
     overflow: hidden; /* Masque les images qui dépassent du conteneur */
     margin: 0 auto; /* Centre le carrousel */
     position: relative;
