@@ -8,6 +8,7 @@
     <!-- Intégration de la police Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<script src="script.js"defer></script>
 <body>
     <!-- Header avec image en arrière-plan -->
     <header class="header" style="background-image: url('background-header.png');">
@@ -29,19 +30,33 @@
                 <li><a href="4-Contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!-- Section avanture Educative -->
+        <!-- Section aventure Educative -->
         <section class="features">
             <div class="container">
                 <h2>Une aventure éducative pour les inventeurs de demain</h2>
                 <div class="carousel">
-                    <div class="carousel-images">
-                        <img src="intro-image.png" alt="Image 1">
-                        <img src="background-header.png" alt="Image 2">
-                        <img src="carroussel1.png" alt="Image 3">
-                        <img src="Carroussel2.png" alt="Image 4">
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-slide current-slide">
+                                <img src="intro-image.png" alt="Image 1" width="150">
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="background-header.png" alt="Image 2" width="150">
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="carroussel1.png" alt="Image 3" width="150">
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="Carroussel2.png" alt="Image 2" width="150">
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev-btn">←</button>
+                        <button class="carousel-btn next-btn">→</button>
+                    </div>
+                    <div class="carousel-indicators"></div>
+                </div> 
             <p>Le Kit Puzzle-Paint est conçu pour éveiller la créativité et enseigner 
                 les principes mécaniques de manière ludique.<br>
                 Avec plus de 60 pièces, découvre le plaisir d'assembler ton propre modèle fonctionnel.
@@ -67,6 +82,17 @@
                 </div>
             </section>
 
+                    <!-- Section vidéo -->
+<section class="video">
+    <div class="container">
+        <h2>Le kit en vidéo</h2>
+        <p>Découvrez le kit en action avec notre vidéo de présentation :</p>
+        <video controls>
+            <source src="Kit-Video2.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture de vidéos.
+        </video>
+    </div>
+
         <!-- Section Pourquoi nous choisir ? -->
         <section class="why-us">
             <div class="container">
@@ -78,11 +104,10 @@
                     height="400"
                     class="intro-image">
                     </div>
-                <ul>
-                    <li><strong>Jouet STEM :</strong> Développez des compétences essentielles.</li>
-                    <li><strong>Assemblage facile :</strong> Pas besoin de colle.</li>
-                    <li><strong>Fabriqué en impression 3D :</strong> Écoresponsable et innovant.</li>
-                </ul>
+                    <br><strong>Jouet STEM :</strong> Développez des compétences essentielles.<br>
+                    <strong>Assemblage facile :</strong> Pas besoin de colle.<br>
+                    <strong>Fabriqué en impression 3D :</strong> Écoresponsable et innovant.<br>
+                </p>
             </div>
         </section>
 
@@ -98,16 +123,6 @@
             </div>
         </section>
         
-        <!-- Section vidéo -->
-<section class="video">
-    <div class="container">
-        <h2>Le kit en vidéo</h2>
-        <p>Découvrez le kit en action avec notre vidéo de présentation :</p>
-        <video controls>
-            <source src="Kit-Video2.mp4" type="video/mp4">
-            Votre navigateur ne prend pas en charge la lecture de vidéos.
-        </video>
-    </div>
 </section>
     </main>
 
