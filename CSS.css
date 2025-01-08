@@ -146,7 +146,7 @@ header p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.testimonials h2, 
+.testimonials h2,
 .why-us h2 {
     margin-bottom: 1rem;
     color: #333;
@@ -337,4 +337,66 @@ footer p {
     background-color: white;
 }
 
+@media (max-width: 768px) {
+    /* Réduire la hauteur du header */
+    header {
+        height: 500px;
+        padding: 20px;
+    }
 
+    header h1 {
+        font-size: 2.5rem; /* Réduire la taille du titre */
+    }
+
+    header p {
+        font-size: 1.5rem; /* Réduire la taille du sous-titre */
+    }
+
+    /* Ajuster la navigation */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .nav-list {
+        flex-wrap: wrap; /* Permettre au menu de s'empiler si nécessaire */
+        gap: 10px;
+    }
+
+    .nav-list a {
+        font-size: 1rem; /* Réduire légèrement la taille de la police */
+        padding: 0.5rem;
+    }
+
+    /* Adapter le carrousel */
+    .carousel {
+        max-width: 100%; /* Adapte la largeur au téléphone */
+    }
+
+    .carousel img {
+        max-height: 200px; /* Limite la hauteur des images */
+        object-fit: cover; /* Garde une bonne proportion sans déformer */
+    }
+
+    /* Réduire les boutons */
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        font-size: 0.9rem; /* Réduire la taille de la police */
+    }
+}
+
+.carousel img {
+    width: 100%; /* L'image occupe toute la largeur */
+    height: auto; /* Respecte les proportions */
+    object-fit: cover; /* Empêche les déformations */
+}
+
+footer {
+    padding: 10px 20px; /* Réduit l'espacement interne */
+    font-size: 0.8rem; /* Adapte la taille de la police */
+}
