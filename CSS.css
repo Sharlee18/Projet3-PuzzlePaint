@@ -407,3 +407,103 @@ img {
     display: block; /* Supprime les espaces blancs sous les images */
     margin: 0 auto; /* Centre l'image */
 }
+
+/* Conteneur principal pour le carrousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Largeur maximale pour limiter la taille */
+    margin: auto;
+    overflow: hidden; /* Masque les débordements */
+    background: #f9f9f9; /* Fond de sécurité pour les transitions */
+    border-radius: 10px; /* Coins arrondis pour un design moderne */
+}
+
+/* Conteneur pour les images */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transition fluide */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Images des carrousels */
+.carousel-track img {
+    width: 100%; /* L'image occupe toute la largeur */
+    height: 100%; /* S'adapte à la hauteur définie */
+    object-fit: contain; /* Maintient les proportions sans couper l'image */
+    flex-shrink: 0; /* Empêche les images de rétrécir */
+}
+
+/* Fixer la hauteur du conteneur */
+.carousel {
+    height: 300px; /* Hauteur fixe du carrousel */
+}
+
+/* Navigation - Boutons précédent/suivant */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-btn.prev-btn {
+    left: 10px;
+}
+
+.carousel-btn.next-btn {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Indicateurs */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.indicator {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.current-indicator {
+    background-color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%; /* Adapte la largeur au téléphone */
+        height: 200px; /* Réduit la hauteur sur les petits écrans */
+    }
+
+    .carousel-track img {
+        object-fit: contain; /* Priorité au maintien des proportions */
+    }
+
+    .carousel-btn {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
