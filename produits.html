@@ -29,10 +29,14 @@
                 <li><a href="5-Blog.html">Blog</a></li>
                 <li><a href="4-Contact.html">Contact</a></li>
             </ul>
+            <div id="cart-icon" class="cart">
+                <img src="panier.png" alt="Panier" class="cart-logo">
+                <span id="cart-count">0</span> <!-- Compteur -->
+            </div>        
         </nav>
    <!-- Nos produits -->
    <section class="features">
-    <div class="container">
+        <div class="container">
         <h2>Description de nos produits</h2>
             </div>
             <p>Le kit puzzle-paint est vendu avec <strong>2 options : </strong> <br>
@@ -56,20 +60,22 @@
 </section>
 
     <main class="product-gallery">
-        <div class="product-card">
+
+        <div class="product" data-id="1" data-name="Kit auto" data-price="49.99">
             <img src="boxkit.png" alt="Produit 1">
-            <h2>Kit Auto </h2>
-            <p>Une maquette ludique à animer avec une manivelle</p>
-            <p class="price">€49.99</p>
-            <button class="btn">Ajouter au panier</button>
-        </div>
-        <div class="product-card">
-            <img src="boxkit.png" alt="Produit 2">
-            <h2>Kit manuel</h2>
+            <h3>Kit Auto</h3>
             <p>Une maquette ludique à animer avec un kit électronique</p>
-            <p class="price">€39.99</p>
-            <button class="btn">Ajouter au panier</button>
+            <p><strong>Prix : €49.99</strong></p>
+            <button class="btn add-to-cart-btn">Ajouter au panier</button>
         </div>
+        <div class="product" data-id="2" data-name="Kit manuel" data-price="39.99">
+            <img src="boxkit.png" alt="Produit 2">
+            <h3>Kit manuel</h3>
+            <p>Une maquette ludique à animer avec une petite manivelle </p>
+            <p><strong>Prix : €39.99</strong></p>
+            <button class="btn add-to-cart-btn">Ajouter au panier</button>
+        </div>
+        
         <!-- Ajoutez d'autres produits ici -->
     </main>
     <script src="produits.js"></script>
