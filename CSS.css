@@ -507,3 +507,58 @@ img {
         font-size: 16px;
     }
 }
+
+@media (max-width: 768px) {
+    .header {
+        height: 300px; /* Hauteur réduite pour mobile */
+        padding: 10px; /* Réduction de l'espacement */
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 1.8rem; /* Texte plus petit */
+        line-height: 1.2;
+    }
+
+    .header p {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .container {
+        width: 95%; /* Réduction de la largeur pour s'adapter */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Navigation en colonne */
+        align-items: flex-start; /* Aligne les liens à gauche */
+        padding: 10px; /* Réduction des marges */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Liens empilés verticalement */
+        gap: 10px;
+        width: 100%; /* Occupe toute la largeur */
+    }
+
+    .nav-list li {
+        text-align: left; /* Texte aligné à gauche */
+    }
+
+    .nav-list a {
+        font-size: 1rem; /* Réduction de la taille des liens */
+        padding: 10px;
+    }
+
+    .cart {
+        align-self: flex-end; /* Le panier reste à droite */
+    }
+}
+
+
+
+
