@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="produits.css">
     <!-- Intégration de la police Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="produits.js" defer></script>
 </head>
+<script src="produits.js"defer></script>
 <body>
     <!-- Header avec image en arrière-plan -->
     <header class="header" style="background-image: url('background-header.png');">
@@ -16,63 +16,79 @@
             <h1>Nos Produits</h1>
             <p>Découvrez nos produits</p>
         </div>
+       
     </header>
 
-    <!-- Barre de navigation -->
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="3-APropos.html">À-propos</a></li>
-            <li><a href="2-History.html">Notre histoire</a></li>
-            <li><a href="produits.html">Nos produits</a></li>
-            <li><a href="5-Blog.html">Blog</a></li>
-            <li><a href="4-Contact.html">Contact</a></li>
-        </ul>
-        <div id="cart-icon" class="cart">
-            <img src="panier.png" alt="Panier" class="cart-logo">
-            <span id="cart-count">0</span> <!-- Compteur -->
-        </div>
-    </nav>
-
-    <!-- Section Description -->
-    <section class="features">
+    <main>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="3-APropos.html">À-propos</a></li>
+                <li><a href="2-History.html">Notre histoire</a></li>
+                <li><a href="produits.html">Nos produits</a></li>
+                <li><a href="5-Blog.html">Blog</a></li>
+                <li><a href="4-Contact.html">Contact</a></li>
+            </ul>
+            <div id="cart-icon" class="cart">
+                <img src="panier.png" alt="Panier" class="cart-logo">
+                <span id="cart-count">0</span> <!-- Compteur -->
+            </div>        
+        </nav>
+   <!-- Nos produits -->
+   <section class="features">
         <div class="container">
-            <h2>Description de nos produits</h2>
-            <p>Le kit puzzle-paint est vendu avec <strong>2 options :</strong></p>
-            <div class="image-wrapper">
-                <img src="kitelec.png" alt="Illustration éducative" width="300" height="200" class="intro-image">
+        <h2>Description de nos produits</h2>
             </div>
-            <p><strong>Un kit Auto</strong>: qui s'anime à l'aide d'un kit électronique constitué d'un régulateur de vitesse, d'un servomoteur et d'un boîtier à piles.</p>
-            <div class="image-wrapper">
-                <img src="kitmanuel.png" alt="Illustration éducative" width="300" height="200" class="intro-image">
-            </div>
-            <p><strong>Un kit Manuel</strong>: qui s'anime à l'aide d'une petite manivelle à placer à l'avant de la maquette au niveau du moteur de la voiture.</p>
+                <div class="image-wrapper">
+                    <img src="kit manuelvsauto.png"
+                    alt="Illustration éducative"
+                    width="600"
+                    height="400"
+                    class="intro-image">
+                    </div>
+                    <p>Le kit puzzle-paint est vendu avec <strong>2 options : </strong> <br>
+            <strong>Un kit Auto</strong>: qui s'anime à l'aide d'un kit électronique constitué d'un régulateur de vitesse, d'un servomoteur et d'un boitier à piles .<br>
+            <strong>Un kit Manuel</strong>: qui s'anime à l'aide d'une petite manivelle à placer à l'avant de la maquette au niveau du moteur de la voiture. <br>
+        </p><br><br>
+        <div class="container">
+        <h2>Contenu des kits</h2>
         </div>
-    </section>
+        <div class="image-wrapper">
+            <img src="kit manuelvsauto2.png"
+            alt="Illustration éducative"
+            width="300"
+            height="200"
+            class="intro-image">
+            </div>
+    <p> quelques soit le kit (Auto ou manuel) que vous achetez, vous aurez-toujours dans votre kit les éléments suivant: <br>
+        <strong>Une soixante de pièces en PLA</strong> à assembler<br>
+            <strong>Une kit de peinture acrylique</strong> à 8 couleurs (à base d'eau)<br>
+                <strong>2 pinceaux</strong> pour la peinture<br>
+                <strong>Une notice d'assemblage</strong> détaillée<br> </p><br>
+</section>
 
-    <!-- Section Produits -->
     <main class="product-gallery">
-        <div class="product-container">
-            <div class="product" data-id="1" data-name="Kit auto" data-price="49.99">
-                <img src="boxkit.png" alt="Produit 1">
-                <h3>Kit Auto</h3>
-                <p>Une maquette ludique à animer avec un kit électronique.</p>
-                <p><strong>Prix : €49.99</strong></p>
-                <button class="btn add-to-cart-btn">Ajouter au panier</button>
-            </div>
-            <div class="product" data-id="2" data-name="Kit manuel" data-price="39.99">
-                <img src="boxkit.png" alt="Produit 2">
-                <h3>Kit manuel</h3>
-                <p>Une maquette ludique à animer avec une petite manivelle.</p>
-                <p><strong>Prix : €39.99</strong></p>
-                <button class="btn add-to-cart-btn">Ajouter au panier</button>
-            </div>
-            <!-- Ajoutez d'autres produits ici -->
-        </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+        <div class="product" data-id="1" data-name="Kit auto" data-price="49.99">
+            <img src="boxkit.png" alt="Produit 1">
+            <h3>Kit Auto</h3>
+            <p>Une maquette ludique à animer avec un kit électronique</p>
+            <p><strong>Prix : €49.99</strong></p>
+            <button class="btn add-to-cart-btn">Ajouter au panier</button>
+        </div>
+        <div class="product" data-id="2" data-name="Kit manuel" data-price="39.99">
+            <img src="boxkit.png" alt="Produit 2">
+            <h3>Kit manuel</h3>
+            <p>Une maquette ludique à animer avec une petite manivelle </p>
+            <p><strong>Prix : €39.99</strong></p>
+            <button class="btn add-to-cart-btn">Ajouter au panier</button>
+        </div>
+       
+        <!-- Ajoutez d'autres produits ici -->
+    </main>
+    <script src="produits.js"></script>
+      <!-- Footer -->
+      <footer class="footer">
         <div class="container">
             <nav>
                 <ul>
@@ -87,3 +103,4 @@
     </footer>
 </body>
 </html>
+
