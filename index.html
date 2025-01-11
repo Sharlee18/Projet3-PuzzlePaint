@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="CSS.css">
     <!-- Intégration de la police Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
-<script src="script.js"defer></script>
 <body>
     <!-- Header avec image en arrière-plan -->
     <header class="header" style="background-image: url('background-header.png');">
@@ -16,7 +16,6 @@
             <h1>Assemblez, Peignez, Apprenez avec le Puzzle-Paint Kit !</h1>
             <p>Le kit éducatif et créatif qui transforme l'apprentissage en jeu.</p>
         </div>
-       
     </header>
 
     <main>
@@ -30,7 +29,8 @@
                 <li><a href="4-Contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!-- Section aventure Educative -->
+
+        <!-- Section aventure éducative -->
         <section class="features">
             <div class="container">
                 <h2>Une aventure éducative pour les inventeurs de demain</h2>
@@ -38,124 +38,64 @@
                     <div class="carousel-track-container">
                         <ul class="carousel-track">
                             <li class="carousel-slide current-slide">
-                                <img src="intro-image.png" alt="Image 1" width="150">
+                                <img src="intro-image.png" alt="Image 1">
                             </li>
                             <li class="carousel-slide">
-                                <img src="background-header.png" alt="Image 2" width="150">
+                                <img src="background-header.png" alt="Image 2">
                             </li>
                             <li class="carousel-slide">
-                                <img src="carroussel1.png" alt="Image 3" width="150">
-                            </li>
-                            <li class="carousel-slide">
-                                <img src="carroussel3.png" alt="Image 5" width="150">
-                            </li>
-                            <li class="carousel-slide">
-                                <img src="Carroussel2.png" alt="Image 5" width="150">
+                                <img src="carroussel1.png" alt="Image 3">
                             </li>
                         </ul>
                     </div>
-                    <div class="carousel-nav">
-                        <button class="carousel-btn prev-btn">←</button>
-                        <button class="carousel-btn next-btn">→</button>
-                    </div>
-                    <div class="carousel-indicators"></div>
+                    <button class="carousel-btn prev-btn">←</button>
+                    <button class="carousel-btn next-btn">→</button>
                 </div>
-            <p>Le Kit Puzzle-Paint est conçu pour éveiller la créativité et enseigner
-                les principes mécaniques de manière ludique.<br>
-                Avec plus de 60 pièces, découvre le plaisir d'assembler ton propre modèle fonctionnel.
-                <br>Pas besoin de colle, tout est inclus pour garantir une expérience fluide et éducative !"</p>
-
+                <p>Le Kit Puzzle-Paint est conçu pour éveiller la créativité et enseigner les principes mécaniques de manière ludique.</p>
+            </div>
         </section>
 
-        <!-- Section Presentation du kit -->
-               <section class="features">
-                <div class="container">
-                    <h2>Présentation du Kit</h2>
-                    <div id="carousel3" class="carousel">
-                        <div class="carousel-track-container">
-                            <ul class="carousel-track">
-                                <li class="carousel-slide current-slide">
-                                    <img src="imageKIT.png" alt="Image 1" width="150">
-                                </li>
-                                <li class="carousel-slide">
-                                    <img src="mecanismeskit.png" alt="Image 2" width="150">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="carousel-nav">
-                            <button class="carousel-btn prev-btn">←</button>
-                            <button class="carousel-btn next-btn">→</button>
-                        </div>
-                        <div class="carousel-indicators"></div>
-                    </div>
-                        <div class="cta-buttons">
-                            <a href="produits.html" class="btn btn-primary">Achetez maintenant</a>
-                        </div>  
-                </div>
-            </section>
-
-                    <!-- Section vidéo -->
-<section class="video">
-    <div class="container">
-        <h2>Le kit en vidéo</h2>
-        <p>Découvrez le kit en action avec notre vidéo de présentation :</p>
-        <video controls>
-            <source src="Kit-Video2.mp4" type="video/mp4">
-            Votre navigateur ne prend pas en charge la lecture de vidéos.
-        </video>
-    </div>
-
-        <!-- Section Pourquoi nous choisir ? -->
-        <section class="why-us">
+        <!-- Section présentation du kit -->
+        <section class="features">
             <div class="container">
-                <h2>Pourquoi nous choisir ?</h2>
+                <h2>Présentation du Kit</h2>
                 <div id="carousel2" class="carousel">
                     <div class="carousel-track-container">
                         <ul class="carousel-track">
                             <li class="carousel-slide current-slide">
-                                <img src="logique.png" alt="Image 1" width="150">
+                                <img src="imageKIT.png" alt="Image 1">
                             </li>
                             <li class="carousel-slide">
-                                <img src="colle2.png" alt="Image 2" width="150">
-                            </li>
-                            <li class="carousel-slide">
-                                <img src="pla3.png" alt="Image 3" width="150">
-                            </li>
-                            <li class="carousel-slide">
-                                <img src="stem4.png" alt="Image 2" width="150">
+                                <img src="mecanismeskit.png" alt="Image 2">
                             </li>
                         </ul>
                     </div>
-        <div class="carousel-nav">
-            <button class="carousel-btn prev-btn">←</button>
-            <button class="carousel-btn next-btn">→</button>
+                    <button class="carousel-btn prev-btn">←</button>
+                    <button class="carousel-btn next-btn">→</button>
+                </div>
+            <p>Le Kit vous permettra d'apprendre de manière ludique de nombreux mécanismes ingénieux se trouvant dans une voiture.
+            Parmi ces mécanisme, vous retrouverez:<br>
+              <strong> Le moteur à 4 Temps</strong>: qui est un système complexe car utilisant de nombreuses pièces (Pistons, bielles, Arbres à cames…) 
+              <br> en mouvement simultané et synchronisé comme une horloge.<br>
+              <strong> Le volant (direction)</strong>: qui est l’ensemble des pièces permettant de modifier l’orientation de la trajectoire du véhicule notamment dans les virages.<br>
+              <strong> La boîte de vitesse</strong>: qui est un mécanisme complexe permettant d’adapter le rapport de vitesse de rotation du moteur et celle des roues grâce à un ensemble d’engrenages de différentes tailles<br>
+              <strong> Le différentiel </strong>:qui permet de transmettre le couple moteur aux roues et jouant un rôle important dans les virages où les roues ne tournent pas à la même vitesse. <br>
+            </p>
+            <a href="produits.html" class="btn btn-primary">Achetez maintenant</a>
         </div>
-        <div class="carousel-indicators"></div>
-
-                    <br><strong>Jouet STEM :</strong> Développez des compétences essentielles.<br>
-                    <strong>Assemblage facile :</strong> Pas besoin de colle.<br>
-                    <strong>Fabriqué en impression 3D :</strong> Écoresponsable et innovant.<br>
-                </p>
-            </div>
-            <div class="cta-buttons">
-                <a href="5-Blog.html" class="btn btn-primary">Découvrez notre Blog</a>
-            </div>  
         </section>
-
-
-        <!-- Section Témoignages -->
-        <section class="testimonials">
-            <div class="container">
-                <h2>Témoignages</h2>
-                <blockquote>
-                    <p>"Un jouet éducatif qui plaît autant aux enfants qu’aux parents !"</p>
-                    <cite>- Parent satisfait</cite>
-                </blockquote>
-            </div>
-        </section>
-       
-</section>
     </main>
+
+      <!-- Section Témoignages -->
+      <section class="testimonials">
+        <div class="container">
+            <h2>Témoignages</h2>
+            <blockquote>
+                <p>"Un jouet éducatif qui plaît autant aux enfants qu’aux parents !"</p>
+                <cite>- Parent satisfait</cite>
+            </blockquote>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
